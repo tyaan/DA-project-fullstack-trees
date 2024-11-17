@@ -84,7 +84,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <h1>Trees. It's just some trees. Add Trees. Delete Trees. Enjoy. </h1>
+        <h1>Trees. It&apos;s just some trees. Add Trees. Delete Trees. Enjoy. </h1>
       </header>
       <section>
         <h2>Add New Tree</h2>

@@ -89,35 +89,35 @@ function App() {
       <section>
         <h2>Add New Tree</h2>
           <form onSubmit={handleAdd}>
-            Common Name: <br />
-            <input name="commonName" value={formState.commonName} onChange={handleChange} />
+            <label htmlFor="commonName">Common Name: </label> <br/>
+            <input id="commonName" name="commonName" value={formState.commonName} onChange={handleChange} />
             <br />
-            Scientific Name: <br />
-            <input name="scientificName" value={formState.scientificName} onChange={handleChange} />
+            <label htmlFor="scientificName">Scientific Name: </label> <br/>
+            <input id="scientificName" name="scientificName" value={formState.scientificName} onChange={handleChange} />
             <br />
-            Family: <br />
-            <input name="family" value={formState.family} onChange={handleChange} />
+            <label htmlFor="family">Family: </label> <br/>
+            <input id="family" name="family" value={formState.family} onChange={handleChange} />
             <br />
-            Height: <br />
-            <input name="height" value={formState.height} onChange={handleChange} />
+            <label htmlFor="height">Height: </label> <br/>
+            <input id="height" name="height" value={formState.height} onChange={handleChange} />
             <br />
-            Width: <br />
-            <input name="width" value={formState.width} onChange={handleChange} />
+            <label htmlFor="width">Width: </label> <br/>
+            <input id="width" name="width" value={formState.width} onChange={handleChange} />
             <br />
-            Trunk Diameter: <br />
-            <input name="trunkDiameter" value={formState.trunkDiameter} onChange={handleChange} />
+            <label htmlFor="trunkDiameter">Trunk Diameter: </label> <br/>
+            <input id="trunkDiameter" name="trunkDiameter" value={formState.trunkDiameter} onChange={handleChange} />
             <br />
-            FlowerColor: <br />
-            <input name="flowerColor" value={formState.flowerColor} onChange={handleChange} />
+            <label htmlFor="flowerColor">FlowerColor: </label> <br/>
+            <input id="flowerColor" name="flowerColor" value={formState.flowerColor} onChange={handleChange} />
             <br />
-            Native Region: <br />
-            <input name="nativeRegion" value={formState.nativeRegion} onChange={handleChange} />
+            <label htmlFor="nativeRegion">Native Region: </label> <br/>
+            <input id="nativeRegion" name="nativeRegion" value={formState.nativeRegion} onChange={handleChange} />
             <br />
-            Description: <br />
-            <input name="description" value={formState.description} onChange={handleChange} />
+            <label htmlFor="description">Description: </label> <br/>
+            <input id="description" name="description" value={formState.description} onChange={handleChange} />
             <br />
-            Notes: <br />
-            <input name="notes" value={formState.notes} onChange={handleChange} />
+            <label htmlFor="notes">Notes: </label> <br/>
+            <input id="notes" name="notes" value={formState.notes} onChange={handleChange} />
             <br />
             <br />
             <button type="submit">Add</button>

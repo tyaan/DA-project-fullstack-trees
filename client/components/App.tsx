@@ -126,8 +126,6 @@ function App() {
       <section className="main">
         <table>
           <tr>
-            <th>SELECT</th>
-            <th>ID</th>
             <th>COMMON NAME</th>
             <th>SCIENTIFIC NAME</th>
             <th>FAMILY</th>
@@ -136,14 +134,13 @@ function App() {
             <th>TRUNK DIAMETER</th>
             <th>FLOWER COLOR</th>
             <th>NATIVE REGION</th>
-            <th>DESCREIPTION</th>
+            <th>DESCRIPTION</th>
             <th>NOTES</th>
+            <th>DELETE</th>
           </tr>
           {data.map((tree) => {
             return (
               <tr key={tree.id + tree.commonName} >
-                <td><button onClick={() => handleDelete(tree.id)}>Delete</button></td>
-                <td>{tree.id}</td>
                 <td>{tree.commonName}</td>
                 <td>{tree.scientificName}</td>
                 <td>{tree.family}</td>
@@ -154,6 +151,7 @@ function App() {
                 <td>{tree.nativeRegion}</td>
                 <td>{tree.description}</td>
                 <td>{tree.notes}</td>
+                <td><button onClick={() => handleDelete(tree.id)}>Delete</button></td>
               </tr>
             )
           })}
